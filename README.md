@@ -65,9 +65,9 @@ Consulte a seção sobre [implantação][docs_deployment] para obter mais inform
 [javascript]: https://javascript.com/
 [javascript_logo]: docs/images/javascript.svg
 
-[localhost]: [http://localhost:3000]
-[docs_test]: [https://facebook.github.io/create-react-app/docs/running-tests]
-[docs_deployment]: [https://facebook.github.io/create-react-app/docs/deployment]
+[localhost]: http://localhost:3000
+[docs_test]: https://facebook.github.io/create-react-app/docs/running-tests
+[docs_deployment]: https://facebook.github.io/create-react-app/docs/deployment
 
 [github_license]: https://img.shields.io/github/license/gustavo-veiga/ihc-tesla?style=flat-square
 [github_version]: https://img.shields.io/github/package-json/v/gustavo-veiga/ihc-tesla?style=flat-square
