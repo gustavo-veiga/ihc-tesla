@@ -1,6 +1,6 @@
 # Dashboard Tesla
 
-![GitHub][github_licence]
+![GitHub][github_license]
 ![GitHub package.json version][github_version]
 ![GitHub dependencies][github_dependencies]
 
