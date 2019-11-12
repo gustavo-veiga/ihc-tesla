@@ -9,6 +9,7 @@
 [![Node][nodejs_logo]][nodejs]&nbsp;&nbsp;&nbsp;
 [![React][react_logo]][react]&nbsp;&nbsp;&nbsp;
 [![PouchDB][pouchdb_logo]][pouchdb]&nbsp;&nbsp;&nbsp;
+[![Leaflet][leaflet_logo]][leaflet]&nbsp;&nbsp;&nbsp;
 [![Material-UI][material_ui_logo]][material_ui]&nbsp;&nbsp;&nbsp;
 [![React Router][react_router_logo]][react_router]
 
@@ -67,6 +68,8 @@ Consulte a seção sobre [implantação][docs_deployment] para obter mais inform
 [javascript_logo]: docs/images/javascript.svg
 [material_ui]: https://material-ui.com/
 [material_ui_logo]: docs/images/material-ui.svg
+[leaflet]: https://leafletjs.com/
+[leaflet_logo]:docs/images/leaflet.svg
 
 [localhost]: http://localhost:3000
 [docs_test]: https://facebook.github.io/create-react-app/docs/running-tests
