@@ -9,7 +9,8 @@
 [![Node][nodejs_logo]][nodejs]&nbsp;&nbsp;&nbsp;
 [![React][react_logo]][react]&nbsp;&nbsp;&nbsp;
 [![PouchDB][pouchdb_logo]][pouchdb]&nbsp;&nbsp;&nbsp;
-[![React Router][reactrouter_logo]][reactrouter]
+[![Material-UI][material_ui_logo]][material_ui]&nbsp;&nbsp;&nbsp;
+[![React Router][react_router_logo]][react_router]
 
 ## Tarefas (Telas e Funcionalidades)
 - [ ] Tela de Login
@@ -56,14 +57,16 @@ Consulte a seção sobre [implantação][docs_deployment] para obter mais inform
 [react_logo]: docs/images/react.svg
 [nodejs]: https://nodejs.org/
 [nodejs_logo]: docs/images/nodejs.svg
-[reactrouter]: https://reacttraining.com/react-router/
-[reactrouter_logo]: docs/images/reactrouter.svg
+[react_router]: https://reacttraining.com/react-router/
+[react_router_logo]: docs/images/react-router.svg
 [eslint]: https://eslint.org/
 [eslint_logo]: docs/images/eslint.svg
 [pouchdb]: https://pouchdb.com/
 [pouchdb_logo]: docs/images/pouchdb.svg
 [javascript]: https://javascript.com/
 [javascript_logo]: docs/images/javascript.svg
+[material_ui]: https://material-ui.com/
+[material_ui_logo]: docs/images/material-ui.svg
 
 [localhost]: http://localhost:3000
 [docs_test]: https://facebook.github.io/create-react-app/docs/running-tests
