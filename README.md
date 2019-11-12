@@ -1,68 +1,74 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Dashboard Tesla
 
-## Available Scripts
+![GitHub][github_licence]
+![GitHub package.json version][github_version]
+![GitHub dependencies][github_dependencies]
 
-In the project directory, you can run:
+## Tecnologias
+[![JavaScript][javascript_logo]][javascript]&nbsp;&nbsp;&nbsp;
+[![Node][nodejs_logo]][nodejs]&nbsp;&nbsp;&nbsp;
+[![React][react_logo]][react]&nbsp;&nbsp;&nbsp;
+[![PouchDB][pouchdb_logo]][pouchdb]&nbsp;&nbsp;&nbsp;
+[![React Router][reactrouter_logo]][reactrouter]
+
+## Tarefas (Telas e Funcionalidades)
+- [ ] Tela de Login
+- [ ] Tela Inicial
+  - [ ] Dashboards
+  - [ ] Drag and Drop
+- [ ] Telas Especiais
+  - [ ] Usuários em Viagens
+  - [ ] Atendimento Médico
+  - [ ] Atendimento de Segurança
+- [ ] Formulários
+- [ ] Relatórios
+- [ ] Mapa
+- [ ] SAC
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Executa o aplicativo no modo de desenvolvimento. <br />
+Abra [http://localhost:3000][localhost] para visualizá-lo no navegador.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+A página será recarregada se você fizer edições. <br />
+Você também verá os erros no console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Inicia o corredor de teste no modo de exibição interativa. <br />
+Consulte a seção sobre [execução de testes][docs_test] para obter mais informações.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cria o aplicativo para produção na pasta `build`. <br />
+Ele agrupa corretamente o React no modo de produção e otimiza a construção para obter o melhor desempenho.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+A compilação é minificada e os nomes de arquivos incluem os hashes. <br />
+O aplicativo está pronto para ser implantado!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Consulte a seção sobre [implantação][docs_deployment] para obter mais informações.
 
-### `npm run eject`
+[react]: https://reactjs.org/
+[react_logo]: docs/images/react.svg
+[nodejs]: https://nodejs.org/
+[nodejs_logo]: docs/images/nodejs.svg
+[reactrouter]: https://reacttraining.com/react-router/
+[reactrouter_logo]: docs/images/reactrouter.svg
+[eslint]: https://eslint.org/
+[eslint_logo]: docs/images/eslint.svg
+[pouchdb]: https://pouchdb.com/
+[pouchdb_logo]: docs/images/pouchdb.svg
+[javascript]: https://javascript.com/
+[javascript_logo]: docs/images/javascript.svg
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[localhost]: [http://localhost:3000]
+[docs_test]: [https://facebook.github.io/create-react-app/docs/running-tests]
+[docs_deployment]: [https://facebook.github.io/create-react-app/docs/deployment]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[github_licence]: https://img.shields.io/github/license/gustavo-veiga/ihc-tesla?style=flat-square
+[github_version]: https://img.shields.io/github/package-json/v/gustavo-veiga/ihc-tesla?style=flat-square
+[github_dependencies]: https://img.shields.io/david/gustavo-veiga/ihc-tesla?style=flat-square
