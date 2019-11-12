@@ -69,6 +69,6 @@ Consulte a seção sobre [implantação][docs_deployment] para obter mais inform
 [docs_test]: [https://facebook.github.io/create-react-app/docs/running-tests]
 [docs_deployment]: [https://facebook.github.io/create-react-app/docs/deployment]
 
-[github_licence]: https://img.shields.io/github/license/gustavo-veiga/ihc-tesla?style=flat-square
+[github_license]: https://img.shields.io/github/license/gustavo-veiga/ihc-tesla?style=flat-square
 [github_version]: https://img.shields.io/github/package-json/v/gustavo-veiga/ihc-tesla?style=flat-square
 [github_dependencies]: https://img.shields.io/david/gustavo-veiga/ihc-tesla?style=flat-square

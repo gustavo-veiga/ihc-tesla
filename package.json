@@ -1,7 +1,12 @@
 {
   "name": "ihc-tesla",
   "version": "0.1.0",
+  "license": "AGPL-3.0",
   "private": true,
+  "author": {
+    "name": "Gustavo Veiga",
+    "email": "gustavo.veiga@unigranrio.br"
+  },
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
