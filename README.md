@@ -16,7 +16,7 @@
 ## Tarefas (Telas e Funcionalidades)
 - [x] Layout
 - [x] Tela de Login
-- [ ] Tela Inicial
+- [x] Tela Inicial
   - [ ] Dashboards
   - [ ] Drag and Drop
 - [ ] Telas Especiais
@@ -25,7 +25,7 @@
   - [ ] Atendimento de Segurança
 - [ ] Formulários
 - [ ] Relatórios
-- [ ] Mapa
+- [x] Mapa
 - [ ] SAC
 
 ## Scripts Disponíveis
