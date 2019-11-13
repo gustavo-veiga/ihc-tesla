@@ -1,9 +1,17 @@
 import React from "react";
 import clsx from "clsx";
 import ListItens from "../components/ListItens";
-import { makeStyles } from "@material-ui/core/styles";
+import { red, grey } from "@material-ui/core/colors";
 import { Menu, Notifications, ChevronLeft } from "@material-ui/icons";
-import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider, Container } from "@material-ui/core";
+import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider } from "@material-ui/core";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: red,
+    secondary: grey
+  }
+});
 
 const drawerWidth = 240;
 
@@ -95,44 +103,43 @@ const Layout = ({ children }) => {
   const handleDrawerClose = () => {
     setOpen(false);
   };
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
-        <Toolbar>
-          <IconButton edge="start" color="inherit" aria-label="open drawer" onClick={handleDrawerOpen}
-            className={clsx(classes.menuButton, open && classes.menuButtonHidden)}>
-            <Menu />
-          </IconButton>
-          <Typography component="h1" variant="h6" color="inherit" className={classes.title} noWrap>
-            Dashboard
-          </Typography>
-          <IconButton color="inherit">
-            <Badge badgeContent={4} color="secondary">
-              <Notifications />
-            </Badge>
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <Drawer variant="permanent" open={open} classes={{
-        paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose)}} >
-        <div className={classes.toolbarIcon}>
-          <IconButton onClick={handleDrawerClose}>
-            <ChevronLeft />
-          </IconButton>
-        </div>
-        <Divider />
-        <ListItens />
-      </Drawer>
-      <main className={classes.content}>
-        <div className={classes.appBarSpacer} />
-        <Container maxWidth="lg" className={classes.container}>
-          {children}
-        </Container>
-      </main>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className={classes.root}>
+        <CssBaseline />
+        <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
+          <Toolbar>
+            <IconButton edge="start" color="inherit" aria-label="open drawer" onClick={handleDrawerOpen}
+              className={clsx(classes.menuButton, open && classes.menuButtonHidden)}>
+              <Menu />
+            </IconButton>
+            <Typography component="h1" variant="h6" color="inherit" className={classes.title} noWrap>
+              Dashboard
+            </Typography>
+            <IconButton color="inherit">
+              <Badge badgeContent={4} color="secondary">
+                <Notifications />
+              </Badge>
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+        <Drawer variant="permanent" open={open} classes={{
+          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose)}} >
+          <div className={classes.toolbarIcon}>
+            <IconButton onClick={handleDrawerClose}>
+              <ChevronLeft />
+            </IconButton>
+          </div>
+          <Divider />
+          <ListItens />
+        </Drawer>
+        <main className={classes.content}>
+          <div className={classes.appBarSpacer} />
+            {children}
+        </main>
+      </div>
+    </ThemeProvider>
   );
 }
 

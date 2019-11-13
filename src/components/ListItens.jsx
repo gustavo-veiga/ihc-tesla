@@ -1,6 +1,6 @@
 import React from "react"
 import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
-import { Dashboard } from "@material-ui/icons"
+import { Dashboard, MapSharp } from "@material-ui/icons"
 
 const ListItens = () => {
   return (
@@ -10,6 +10,12 @@ const ListItens = () => {
           <Dashboard />
         </ListItemIcon>
         <ListItemText primary="Dashboard" />
+      </ListItem>
+      <ListItem button>
+        <ListItemIcon>
+          <MapSharp />
+        </ListItemIcon>
+        <ListItemText primary="Mapa" />
       </ListItem>
     </div>
   )

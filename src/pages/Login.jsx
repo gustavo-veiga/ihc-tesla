@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { Grid, CssBaseline, Paper, TextField, FormControlLabel, Checkbox, Button, Link, Box } from "@material-ui/core";
+import { Grid, CssBaseline, Paper, TextField, FormControlLabel, Checkbox, Button, Link } from "@material-ui/core";
 
 const randomTheme = () => {
   const themes = [
@@ -66,7 +66,7 @@ const useStyles = makeStyles(style => ({
   },
 }));
 
-const Login = () => {
+const LoginPage = () => {
   const classes = useStyles();
 
   return (
@@ -74,6 +74,7 @@ const Login = () => {
     <Grid container component="main" className={classes.root}>
       <Helmet>
         <title>Login</title>
+        <meta name="theme-color" content={theme.color} />
       </Helmet>
       <CssBaseline />
       <Grid item xs={false} sm={4} md={8} className={classes.image} />
@@ -103,13 +104,9 @@ const Login = () => {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
-                  Esqueceu a senha?
-                </Link>
+                <Link href="#" variant="body2">Esqueceu a senha?</Link>
               </Grid>
             </Grid>
-            <Box mt={5}>
-            </Box>
           </form>
         </div>
       </Grid>
@@ -118,4 +115,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default LoginPage;
