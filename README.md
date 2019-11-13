@@ -14,7 +14,8 @@
 [![React Router][react_router_logo]][react_router]
 
 ## Tarefas (Telas e Funcionalidades)
-- [ ] Tela de Login
+- [x] Layout
+- [x] Tela de Login
 - [ ] Tela Inicial
   - [ ] Dashboards
   - [ ] Drag and Drop
