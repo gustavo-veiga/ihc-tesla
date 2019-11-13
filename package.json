@@ -7,7 +7,7 @@
     "name": "Gustavo Veiga",
     "email": "gustavo.veiga@unigranrio.br"
   },
-  "homepage": "http://gustavo-veiga.github.io/ihc-tesla",
+  "homepage": "https://gustavo-veiga.github.io/ihc-tesla/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
