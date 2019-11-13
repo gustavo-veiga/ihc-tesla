@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 import Layout from "./components/Layout"
 
@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound'
 
 const Router = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="/">
       <Switch>
         <Route exact path="/">
           <Layout>
@@ -27,7 +27,7 @@ const Router = () => {
           <NotFound />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
