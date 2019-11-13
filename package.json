@@ -7,6 +7,14 @@
     "name": "Gustavo Veiga",
     "email": "gustavo.veiga@unigranrio.br"
   },
+  "homepage": "http://gustavo-veiga.github.io/ihc-tesla",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "react-scripts build",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
@@ -19,10 +27,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   },
   "eslintConfig": {
     "extends": "react-app"
