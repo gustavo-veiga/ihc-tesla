@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
+import TileCars from "../components/dashboard/TileCars"
+import TileEmpty from "../components/dashboard/TileEmpty"
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Grid, Paper, Typography, Link } from "@material-ui/core";
 
@@ -17,24 +19,8 @@ const DashboardPage = () => {
     <Layout title="Dashboard">
       <Container maxWidth="lg" className={classes.container}>
         <Grid container spacing={3}>
-          <Grid item xs={4}>
-            <Paper>
-              <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                Recent Deposits
-              </Typography>
-              <Typography component="p" variant="h4">
-                $3,024.00
-              </Typography>
-              <Typography color="textSecondary" className={classes.depositContext}>
-                on 15 March, 2019
-              </Typography>
-              <div>
-                <Link color="primary" href="javascript:;">
-                  View balance
-                </Link>
-              </div>
-            </Paper>
-          </Grid>
+          <TileCars />
+          <TileEmpty />
         </Grid>
       </Container>
     </Layout>
