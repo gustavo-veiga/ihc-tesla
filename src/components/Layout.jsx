@@ -5,7 +5,7 @@ import ListItens from "../components/ListItens";
 import { red, grey } from "@material-ui/core/colors";
 import { Menu, Notifications, ChevronLeft, Person } from "@material-ui/icons";
 import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider } from "@material-ui/core";
+import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider, Avatar } from "@material-ui/core";
 
 const theme = createMuiTheme({
   palette: {
@@ -80,19 +80,6 @@ const useStyles = makeStyles(theme => ({
     height: '100vh',
     overflow: 'auto',
   },
-  container: {
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
-  },
-  paper: {
-    padding: theme.spacing(2),
-    display: 'flex',
-    overflow: 'auto',
-    flexDirection: 'column',
-  },
-  fixedHeight: {
-    height: 240,
-  },
 }));
 
 const Layout = ({ title, children }) => {
@@ -128,7 +115,9 @@ const Layout = ({ title, children }) => {
               </Badge>
             </IconButton>
             <IconButton color="inherit">
-              <Person />
+              <Avatar>
+                <Person />
+              </Avatar>
             </IconButton>
           </Toolbar>
         </AppBar>
