@@ -1,22 +1,16 @@
-import React from "react"
-import { ListItem, ListItemIcon, ListItemText } from "@material-ui/core"
-import { Dashboard, MapSharp } from "@material-ui/icons"
+import React from "react";
+import LinkItem from "../components/LinkItem";
+import { Dashboard, MapSharp } from "@material-ui/icons";
 
 const ListItens = () => {
   return (
     <div>
-      <ListItem button>
-        <ListItemIcon>
-          <Dashboard />
-        </ListItemIcon>
-        <ListItemText primary="Dashboard" />
-      </ListItem>
-      <ListItem button>
-        <ListItemIcon>
-          <MapSharp />
-        </ListItemIcon>
-        <ListItemText primary="Mapa" />
-      </ListItem>
+      <LinkItem to="/" text="Dashboard">
+        <Dashboard />
+      </LinkItem>
+      <LinkItem to="/map" text="Mapa">
+        <MapSharp />
+      </LinkItem>
     </div>
   )
 }

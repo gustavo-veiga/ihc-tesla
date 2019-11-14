@@ -1,8 +1,9 @@
 import React from "react";
 import clsx from "clsx";
+import { Helmet } from "react-helmet";
 import ListItens from "../components/ListItens";
 import { red, grey } from "@material-ui/core/colors";
-import { Menu, Notifications, ChevronLeft } from "@material-ui/icons";
+import { Menu, Notifications, ChevronLeft, Person } from "@material-ui/icons";
 import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider } from "@material-ui/core";
 
@@ -94,7 +95,7 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Layout = ({ children }) => {
+const Layout = ({ title, children }) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
   const handleDrawerOpen = () => {
@@ -106,6 +107,10 @@ const Layout = ({ children }) => {
 
   return (
     <ThemeProvider theme={theme}>
+      <Helmet>
+        <title>{title}</title>
+        <meta name="theme-color" content="#f44336" />
+      </Helmet>
       <div className={classes.root}>
         <CssBaseline />
         <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
@@ -115,12 +120,15 @@ const Layout = ({ children }) => {
               <Menu />
             </IconButton>
             <Typography component="h1" variant="h6" color="inherit" className={classes.title} noWrap>
-              Dashboard
+              {title}
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <Notifications />
               </Badge>
+            </IconButton>
+            <IconButton color="inherit">
+              <Person />
             </IconButton>
           </Toolbar>
         </AppBar>

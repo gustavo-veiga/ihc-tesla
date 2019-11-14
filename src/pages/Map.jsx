@@ -1,4 +1,5 @@
 import React from "react";
+import Layout from "../components/Layout";
 import { makeStyles } from "@material-ui/core";
 import { Map, TileLayer } from "react-leaflet";
 
@@ -13,12 +14,14 @@ const MapPage = () => {
   const position = [-22.7889, -43.3059]
 
   return (
-    <Map center={position} zoom={15} className={classes.root}>
+    <Layout title="Mapa">
+      <Map center={position} zoom={15} className={classes.root}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
     </Map>
+    </Layout>
   )
 }
 
