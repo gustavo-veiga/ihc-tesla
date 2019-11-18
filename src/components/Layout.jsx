@@ -2,10 +2,11 @@ import React from "react";
 import clsx from "clsx";
 import { Helmet } from "react-helmet";
 import ListItens from "../components/ListItens";
+import AvatarUser from "../components/layout/AvatarUser";
 import { red, grey } from "@material-ui/core/colors";
-import { Menu, Notifications, ChevronLeft, Person } from "@material-ui/icons";
+import { Menu, Notifications, ChevronLeft } from "@material-ui/icons";
 import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider, Avatar } from "@material-ui/core";
+import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider } from "@material-ui/core";
 
 const theme = createMuiTheme({
   palette: {
@@ -114,11 +115,7 @@ const Layout = ({ title, children }) => {
                 <Notifications />
               </Badge>
             </IconButton>
-            <IconButton color="inherit">
-              <Avatar>
-                <Person />
-              </Avatar>
-            </IconButton>
+            <AvatarUser />
           </Toolbar>
         </AppBar>
         <Drawer variant="permanent" open={open} classes={{
