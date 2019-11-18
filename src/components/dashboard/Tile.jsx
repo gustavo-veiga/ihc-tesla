@@ -24,7 +24,9 @@ const Tile = ({ title, children }) => {
   return (
     <Grid item xs={12} md={4}>
       <Paper className={fixedHeightPaper}>
-        <Title>{title}</Title>
+        {title !== undefined &&
+          <Title>{title}</Title>
+        }
         {children}
       </Paper>
     </Grid>

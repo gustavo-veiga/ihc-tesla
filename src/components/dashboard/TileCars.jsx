@@ -12,7 +12,7 @@ const TileEmpty = () => {
         on 15 March, 2019
       </Typography>
       <div>
-        <Link color="primary" href="javascript:;">
+        <Link color="primary">
           View balance
         </Link>
       </div>

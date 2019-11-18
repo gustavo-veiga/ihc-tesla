@@ -5,10 +5,11 @@ import { IconButton } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(style => ({
-  add: {
-    flex: 1,
-    flexDirection: 'collum',
-    margin: '0 auto',
+  containter: {
+    height: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 }));
 
@@ -17,7 +18,7 @@ const TileEmpty = () => {
 
   return (
     <Tile>
-      <div className={classes.add}>
+      <div className={classes.containter}>
         <IconButton color="inherit">
           <Add />
         </IconButton>
