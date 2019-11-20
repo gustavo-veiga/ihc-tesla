@@ -1,10 +1,10 @@
 # Dashboard Tesla
 
-Projeto para a disciplina IHC (Interação Humano–Computador). O Propósito deste trabalho é desenvolver uma plataforma de gestão, atendimento e monitoramento para o serviço de transporte privado com veículos autônomos.
-
 ![GitHub][github_license]
 ![GitHub package.json version][github_version]
 ![GitHub dependencies][github_dependencies]
+
+Projeto para a disciplina IHC (Interação Humano–Computador). O Propósito deste trabalho é desenvolver uma plataforma de gestão, atendimento e monitoramento para o serviço de transporte privado com veículos autônomos.
 
 ## Tecnologias
 [![JavaScript][javascript_logo]][javascript]&nbsp;&nbsp;&nbsp;
