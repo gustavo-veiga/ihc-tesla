@@ -46,7 +46,7 @@ const useStyles = makeStyles(style => ({
     height: '100vh',
   },
   image: {
-    backgroundImage: `url(assets/images/${theme.background})`,
+    backgroundImage: `url(assets/images/backgrounds/${theme.background})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
