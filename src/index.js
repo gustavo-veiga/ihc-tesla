@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Router from './router';
 import * as serviceWorker from './serviceWorker';
+import "./i18n"
 import "./styles/custom.css"
 import "leaflet/dist/leaflet.css"
 import 'react-chat-elements/dist/main.css';
