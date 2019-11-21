@@ -1,0 +1,30 @@
+[
+  {
+    "avatar": "assets/images/profiles/male-01.jpg",
+    "alt": "M",
+    "title": "Julio Barbosa",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+    "date": "2019-11-19 21:58:53 UTC",
+    "unread": 0,
+    "messages": [
+      {
+        "position": "right",
+        "type": "text",
+        "text": "Olá, como posso ajudar?",
+        "date": "1574293074957"
+      },
+      {
+        "position": "left",
+        "type": "text",
+        "text": "Oi, o controle do ar condicionado parece não estar funcionando.",
+        "date": "1574293074957"
+      },
+      {
+        "position": "right",
+        "type": "text",
+        "text": "Por qual meio o senhor está tentando controlar?",
+        "date": "1574293074957"
+      }
+    ]
+  }
+]
