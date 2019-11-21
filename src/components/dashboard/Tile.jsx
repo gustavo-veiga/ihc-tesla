@@ -1,41 +1,40 @@
-import React from "react";
-import clsx from 'clsx';
-import Title from "./Title"
-import PropTypes from "prop-types";
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Paper } from "@material-ui/core";
+import React from 'react'
+import clsx from 'clsx'
+import Title from './Title'
+import PropTypes from 'prop-types'
+import { Grid, Paper } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(style => ({
   paper: {
     padding: style.spacing(2),
     display: 'flex',
     overflow: 'auto',
-    flexDirection: 'column',
+    flexDirection: 'column'
   },
   fixedHeight: {
-    height: 240,
-  },
-}));
+    height: 240
+  }
+}))
 
 const Tile = ({ title, children }) => {
-  const classes = useStyles();
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+  const classes = useStyles()
+  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight)
 
   return (
     <Grid item xs={12} md={4}>
       <Paper className={fixedHeightPaper}>
         {title !== undefined &&
-          <Title>{title}</Title>
-        }
+          <Title>{title}</Title>}
         {children}
       </Paper>
     </Grid>
-  );
+  )
 }
 
 Tile.propTypes = {
   title: PropTypes.string,
-  children: PropTypes.node,
-};
+  children: PropTypes.node
+}
 
-export default Tile;
+export default Tile

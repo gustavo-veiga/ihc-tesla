@@ -1,59 +1,59 @@
-import React from "react";
-import clsx from "clsx";
-import { Helmet } from "react-helmet";
-import ListItens from "../components/ListItens";
-import AvatarUser from "../components/layout/AvatarUser";
-import { red, grey } from "@material-ui/core/colors";
-import { Menu, Notifications, ChevronLeft } from "@material-ui/icons";
-import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider } from "@material-ui/core";
+import React from 'react'
+import clsx from 'clsx'
+import { Helmet } from 'react-helmet'
+import ListItens from '../components/ListItens'
+import AvatarUser from '../components/layout/AvatarUser'
+import { red, grey } from '@material-ui/core/colors'
+import { Menu, Notifications, ChevronLeft } from '@material-ui/icons'
+import { makeStyles, createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
+import { CssBaseline, AppBar, Toolbar, IconButton, Typography, Badge, Drawer, Divider } from '@material-ui/core'
 
 const theme = createMuiTheme({
   palette: {
     primary: red,
     secondary: grey
   }
-});
+})
 
-const drawerWidth = 240;
+const drawerWidth = 240
 
 const useStyles = makeStyles(theme => ({
   root: {
-    display: 'flex',
+    display: 'flex'
   },
   toolbar: {
-    paddingRight: 24, // keep right padding when drawer closed
+    paddingRight: 24 // keep right padding when drawer closed
   },
   toolbarIcon: {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'flex-end',
     padding: '0 8px',
-    ...theme.mixins.toolbar,
+    ...theme.mixins.toolbar
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
+      duration: theme.transitions.duration.leavingScreen
+    })
   },
   appBarShift: {
     marginLeft: drawerWidth,
     width: `calc(100% - ${drawerWidth}px)`,
     transition: theme.transitions.create(['width', 'margin'], {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
+      duration: theme.transitions.duration.enteringScreen
+    })
   },
   menuButton: {
-    marginRight: 36,
+    marginRight: 36
   },
   menuButtonHidden: {
-    display: 'none',
+    display: 'none'
   },
   title: {
-    flexGrow: 1,
+    flexGrow: 1
   },
   drawerPaper: {
     position: 'relative',
@@ -61,65 +61,70 @@ const useStyles = makeStyles(theme => ({
     width: drawerWidth,
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
+      duration: theme.transitions.duration.enteringScreen
+    })
   },
   drawerPaperClose: {
     overflowX: 'hidden',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
+      duration: theme.transitions.duration.leavingScreen
     }),
     width: theme.spacing(7),
     [theme.breakpoints.up('sm')]: {
-      width: theme.spacing(9),
-    },
+      width: theme.spacing(9)
+    }
   },
   appBarSpacer: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
     height: '100vh',
-    overflow: 'auto',
-  },
-}));
+    overflow: 'auto'
+  }
+}))
 
 const Layout = ({ title, children }) => {
-  const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const classes = useStyles()
+  const [open, setOpen] = React.useState(true)
   const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+    setOpen(true)
+  }
   const handleDrawerClose = () => {
-    setOpen(false);
-  };
+    setOpen(false)
+  }
 
   return (
     <ThemeProvider theme={theme}>
       <Helmet>
         <title>{title}</title>
-        <meta name="theme-color" content="#f44336" />
+        <meta name='theme-color' content='#f44336' />
       </Helmet>
       <div className={classes.root}>
         <CssBaseline />
-        <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
+        <AppBar position='absolute' className={clsx(classes.appBar, open && classes.appBarShift)}>
           <Toolbar>
-            <IconButton edge="start" color="inherit" aria-label="open drawer" onClick={handleDrawerOpen}
-              className={clsx(classes.menuButton, open && classes.menuButtonHidden)}>
+            <IconButton
+              edge='start' color='inherit' aria-label='open drawer' onClick={handleDrawerOpen}
+              className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
+            >
               <Menu />
             </IconButton>
-            <Typography component="h1" variant="h6" color="inherit" className={classes.title} noWrap>
+            <Typography component='h1' variant='h6' color='inherit' className={classes.title} noWrap>
               {title}
             </Typography>
-            <IconButton color="inherit">
-              <Badge badgeContent={4} color="secondary">
+            <IconButton color='inherit'>
+              <Badge badgeContent={4} color='secondary'>
                 <Notifications />
               </Badge>
             </IconButton>
             <AvatarUser />
           </Toolbar>
         </AppBar>
-        <Drawer variant="permanent" open={open} classes={{
-          paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose)}} >
+        <Drawer
+          variant='permanent' open={open} classes={
+            { paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose) }
+          }
+        >
           <div className={classes.toolbarIcon}>
             <IconButton onClick={handleDrawerClose}>
               <ChevronLeft />
@@ -130,11 +135,11 @@ const Layout = ({ title, children }) => {
         </Drawer>
         <main className={classes.content}>
           <div className={classes.appBarSpacer} />
-            {children}
+          {children}
         </main>
       </div>
     </ThemeProvider>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

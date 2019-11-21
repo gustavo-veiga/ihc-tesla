@@ -1,6 +1,6 @@
-import React from "react"
-import Lottie from "react-lottie";
-import animationData from "../../animations/animation-feed.json"
+import React from 'react'
+import Lottie from 'react-lottie'
+import animationData from '../../animations/animation-feed.json'
 
 const MessageEmpty = () => {
   const defaultOptions = {
@@ -10,11 +10,11 @@ const MessageEmpty = () => {
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice'
     }
-  };
+  }
 
   return (
     <Lottie options={defaultOptions} height={450} width={450} />
   )
 }
 
-export default MessageEmpty;
+export default MessageEmpty

@@ -1,8 +1,8 @@
-import React from "react";
-import Tile from "./Tile";
-import { Add } from "@material-ui/icons";
-import { IconButton } from "@material-ui/core";
-import { makeStyles } from '@material-ui/core/styles';
+import React from 'react'
+import Tile from './Tile'
+import { Add } from '@material-ui/icons'
+import { IconButton } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles(style => ({
   containter: {
@@ -11,20 +11,20 @@ const useStyles = makeStyles(style => ({
     alignItems: 'center',
     justifyContent: 'center'
   }
-}));
+}))
 
 const TileEmpty = () => {
-  const classes = useStyles();
+  const classes = useStyles()
 
   return (
     <Tile>
       <div className={classes.containter}>
-        <IconButton color="inherit">
+        <IconButton color='inherit'>
           <Add />
         </IconButton>
       </div>
     </Tile>
-  );
+  )
 }
 
-export default TileEmpty;
+export default TileEmpty

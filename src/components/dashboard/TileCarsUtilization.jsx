@@ -1,23 +1,23 @@
-import React from "react";
-import Tile from "./Tile";
-import { ResponsiveLine } from "@nivo/line";
+import React from 'react'
+import Tile from './Tile'
+import { ResponsiveLine } from '@nivo/line'
 
 const data = [
   {
-    id: "Rodando",
-    color: "hsl(226, 70%, 50%)",
+    id: 'Rodando',
+    color: 'hsl(226, 70%, 50%)',
     data: [
       {
-        x: "00:00",
-        y: "5"
+        x: '00:00',
+        y: '5'
       },
       {
-        x: "00:05",
-        y: "6"
+        x: '00:05',
+        y: '6'
       },
       {
-        x: "00:10",
-        y: "2"
+        x: '00:10',
+        y: '2'
       }
     ]
   }
@@ -25,7 +25,7 @@ const data = [
 
 const TileCarsUtilization = () => {
   return (
-    <Tile title="Utilização de Carros">
+    <Tile title='Utilização de Carros'>
       <ResponsiveLine
         data={data}
         margin={{ top: 10, right: 110, bottom: 70, left: 60 }}
@@ -35,7 +35,7 @@ const TileCarsUtilization = () => {
         axisRight={null}
       />
     </Tile>
-  );
+  )
 }
 
-export default TileCarsUtilization;
+export default TileCarsUtilization
