@@ -18,12 +18,15 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
+    "@nivo/line": "^0.59.3",
     "leaflet": "^1.5.1",
     "pouchdb-browser": "^7.1.1",
     "react": "^16.11.0",
+    "react-chat-elements": "^10.8.0",
     "react-dom": "^16.11.0",
     "react-helmet": "^5.2.1",
     "react-leaflet": "^2.5.0",
+    "react-lottie": "^1.2.3",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
