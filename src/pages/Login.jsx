@@ -1,8 +1,9 @@
 import React from "react";
+import FlagIcon from "../components/FlagIcon"
 import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import { makeStyles, createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
-import { Grid, CssBaseline, Paper, TextField, FormControlLabel, Checkbox, Button, Link } from "@material-ui/core";
+import { Grid, CssBaseline, Paper, TextField, FormControlLabel, Checkbox, Button, Select, MenuItem, Link } from "@material-ui/core";
 
 const randomTheme = () => {
   const themes = [
@@ -42,7 +43,7 @@ const themePalette = createMuiTheme({
   }
 });
 
-const useStyles = makeStyles(style => ({
+const useStyles = makeStyles(({ spacing }) => ({
   root: {
     height: '100vh',
   },
@@ -52,35 +53,50 @@ const useStyles = makeStyles(style => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
+  language: {
+    margin: spacing(1, 4)
+  },
   paper: {
-    margin: style.spacing(8, 4),
+    margin: spacing(3, 4),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   },
   form: {
     width: '100%', // Fix IE 11 issue.
-    marginTop: style.spacing(1),
+    marginTop: spacing(1),
   },
   submit: {
-    margin: style.spacing(3, 0, 2),
+    margin: spacing(3, 0, 2),
   },
 }));
 
 const LoginPage = () => {
   const classes = useStyles();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [lang, setLang] = React.useState('pt');
 
   return (
     <ThemeProvider theme={themePalette}>
+      <Helmet>
+        <title>{t("Sign In")}</title>
+        <meta name="theme-color" content={theme.color} />
+      </Helmet>
       <Grid container component="main" className={classes.root}>
-        <Helmet>
-          <title>{t("Sign In")}</title>
-          <meta name="theme-color" content={theme.color} />
-        </Helmet>
         <CssBaseline />
         <Grid item xs={false} sm={4} md={8} className={classes.image} />
         <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
+          <Select value={lang} className={classes.language} onChange={(event) => {
+            setLang(event.target.value);
+            i18n.changeLanguage(event.target.value);
+          }}>
+            <MenuItem value="pt">
+              <FlagIcon code="br" size="lg" alt="Português Brasileiro" />
+            </MenuItem>
+            <MenuItem value="en">
+              <FlagIcon code="us" size="lg" alt="Inglês Americano" />
+            </MenuItem>
+          </Select>
           <div className={classes.paper}>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.672 36.337">
               <g fill={theme.color}>

@@ -25,6 +25,7 @@
     "react": "^16.11.0",
     "react-chat-elements": "^10.8.0",
     "react-dom": "^16.11.0",
+    "react-flag-icon-css": "^1.0.25",
     "react-helmet": "^5.2.1",
     "react-i18next": "^11.2.2",
     "react-leaflet": "^2.5.0",
