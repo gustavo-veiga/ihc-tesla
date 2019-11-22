@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { makeStyles } from '@material-ui/core/styles'
 import { AccountCircle, Person, Settings, ExitToApp } from '@material-ui/icons'
 import { IconButton, Avatar, Popover, Divider, List, ListItem, ListItemAvatar, ListItemIcon, ListItemText } from '@material-ui/core'
@@ -12,6 +13,7 @@ const useStyles = makeStyles(theme => ({
 
 const AvatarUser = () => {
   const classes = useStyles()
+  const { t } = useTranslation()
   const [anchorEl, setAnchorEl] = React.useState(null)
 
   const handleClick = event => {
@@ -60,19 +62,19 @@ const AvatarUser = () => {
             <ListItemIcon>
               <Person />
             </ListItemIcon>
-            <ListItemText primary='Perfil' />
+            <ListItemText primary={t('Profile')} />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
               <Settings />
             </ListItemIcon>
-            <ListItemText primary='Configurações' />
+            <ListItemText primary={t('Settings')} />
           </ListItem>
           <ListItem button>
             <ListItemIcon>
               <ExitToApp />
             </ListItemIcon>
-            <ListItemText primary='Sair' />
+            <ListItemText primary={t('Exit')} />
           </ListItem>
         </List>
       </Popover>

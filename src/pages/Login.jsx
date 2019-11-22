@@ -74,7 +74,7 @@ const useStyles = makeStyles(({ spacing }) => ({
 const LoginPage = () => {
   const classes = useStyles()
   const { t, i18n } = useTranslation()
-  const [lang, setLang] = React.useState('pt')
+  const [lang, setLang] = React.useState(i18n.language)
 
   return (
     <ThemeProvider theme={themePalette}>
@@ -92,10 +92,10 @@ const LoginPage = () => {
               i18n.changeLanguage(event.target.value)
             }}
           >
-            <MenuItem value='pt'>
+            <MenuItem value='pt-BR'>
               <FlagIcon code='br' size='lg' alt='Português Brasileiro' />
             </MenuItem>
-            <MenuItem value='en'>
+            <MenuItem value='en-US'>
               <FlagIcon code='us' size='lg' alt='Inglês Americano' />
             </MenuItem>
           </Select>

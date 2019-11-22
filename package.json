@@ -20,6 +20,7 @@
     "@material-ui/icons": "^4.5.1",
     "@nivo/line": "^0.59.3",
     "i18next": "^19.0.1",
+    "i18next-browser-languagedetector": "^4.0.1",
     "leaflet": "^1.5.1",
     "pouchdb-browser": "^7.1.1",
     "react": "^16.11.0",
