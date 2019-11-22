@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ihc-tesla/precache-manifest.fcade231225f3d2bc18a6e1a7a4a9006.js"
+  "/ihc-tesla/precache-manifest.93c4c649f42b42ff6aaef24baf2c5ab8.js"
 );
 
 self.addEventListener('message', (event) => {

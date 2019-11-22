@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/ihc-tesla/static/css/main.075a243f.chunk.css",
-    "main.js": "/ihc-tesla/static/js/main.16bd14d9.chunk.js",
+    "main.js": "/ihc-tesla/static/js/main.ef09ea79.chunk.js",
     "runtime-main.js": "/ihc-tesla/static/js/runtime-main.ea318a6e.js",
-    "static/css/2.5237d6d4.chunk.css": "/ihc-tesla/static/css/2.5237d6d4.chunk.css",
-    "static/js/2.9f8cb6e2.chunk.js": "/ihc-tesla/static/js/2.9f8cb6e2.chunk.js",
+    "static/css/2.17044620.chunk.css": "/ihc-tesla/static/css/2.17044620.chunk.css",
+    "static/js/2.498d2a5b.chunk.js": "/ihc-tesla/static/js/2.498d2a5b.chunk.js",
     "index.html": "/ihc-tesla/index.html",
-    "precache-manifest.fcade231225f3d2bc18a6e1a7a4a9006.js": "/ihc-tesla/precache-manifest.fcade231225f3d2bc18a6e1a7a4a9006.js",
+    "precache-manifest.93c4c649f42b42ff6aaef24baf2c5ab8.js": "/ihc-tesla/precache-manifest.93c4c649f42b42ff6aaef24baf2c5ab8.js",
     "service-worker.js": "/ihc-tesla/service-worker.js",
     "static/media/flag-icon.css": "/ihc-tesla/static/media/zw.8b885465.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ea318a6e.js",
-    "static/css/2.5237d6d4.chunk.css",
-    "static/js/2.9f8cb6e2.chunk.js",
+    "static/css/2.17044620.chunk.css",
+    "static/js/2.498d2a5b.chunk.js",
     "static/css/main.075a243f.chunk.css",
-    "static/js/main.16bd14d9.chunk.js"
+    "static/js/main.ef09ea79.chunk.js"
   ]
 }
