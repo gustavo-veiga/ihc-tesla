@@ -17,8 +17,8 @@ const TileEmpty = () => {
   const classes = useStyles()
 
   return (
-    <Tile>
-      <div className={classes.containter}>
+    <Tile xs={12} md={4}>
+      <div className={classes.containter} xs={12} md={4}>
         <IconButton color='inherit'>
           <Add />
         </IconButton>

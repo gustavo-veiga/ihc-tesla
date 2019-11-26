@@ -25,7 +25,7 @@ const data = [
 
 const TileCarsUtilization = () => {
   return (
-    <Tile title='Utilização de Carros'>
+    <Tile title='Utilização de Carros' xs={12} md={4}>
       <ResponsiveLine
         data={data}
         margin={{ top: 10, right: 110, bottom: 70, left: 60 }}

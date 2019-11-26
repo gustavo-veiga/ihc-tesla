@@ -18,6 +18,7 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
+    "@nivo/bar": "^0.59.2",
     "@nivo/line": "^0.59.3",
     "i18next": "^19.0.1",
     "i18next-browser-languagedetector": "^4.0.1",

@@ -9,7 +9,6 @@ const useStyles = makeStyles(style => ({
   paper: {
     padding: style.spacing(2),
     display: 'flex',
-    overflow: 'auto',
     flexDirection: 'column'
   },
   fixedHeight: {
@@ -17,12 +16,12 @@ const useStyles = makeStyles(style => ({
   }
 }))
 
-const Tile = ({ title, children }) => {
+const Tile = ({ xs, md, title, children }) => {
   const classes = useStyles()
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight)
 
   return (
-    <Grid item xs={12} md={4}>
+    <Grid item xs={xs} md={md}>
       <Paper className={fixedHeightPaper}>
         {title !== undefined &&
           <Title>{title}</Title>}
@@ -32,7 +31,14 @@ const Tile = ({ title, children }) => {
   )
 }
 
+Title.defaultProps = {
+  xs: 12,
+  md: 4
+}
+
 Tile.propTypes = {
+  xs: PropTypes.number,
+  md: PropTypes.number,
   title: PropTypes.string,
   children: PropTypes.node
 }

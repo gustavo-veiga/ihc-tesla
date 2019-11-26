@@ -4,7 +4,7 @@ import { Typography, Link } from '@material-ui/core'
 
 const TileEmpty = () => {
   return (
-    <Tile title='Carros'>
+    <Tile title='Carros' xs={12} md={4}>
       <Typography component='p' variant='h4'>
         $3,024.00
       </Typography>
