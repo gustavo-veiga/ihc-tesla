@@ -2,7 +2,8 @@
 
 ![GitHub][github_license]
 ![GitHub package.json version][github_version]
-![GitHub dependencies][github_dependencies]
+[![Code Climate maintainability][code_climate_maintainability]][code_climate]
+[![GitHub dependencies][github_dependencies]][dependencies]
 
 Projeto para a disciplina IHC (Interação Humano–Computador). O Propósito deste trabalho é desenvolver uma plataforma de gestão, atendimento e monitoramento para o serviço de transporte privado com veículos autônomos.
 
@@ -82,3 +83,8 @@ Consulte a seção sobre [implantação][docs_deployment] para obter mais inform
 [github_license]: https://img.shields.io/github/license/gustavo-veiga/ihc-tesla?style=flat-square
 [github_version]: https://img.shields.io/github/package-json/v/gustavo-veiga/ihc-tesla?style=flat-square
 [github_dependencies]: https://img.shields.io/david/gustavo-veiga/ihc-tesla?style=flat-square
+[code_climate_maintainability]: https://img.shields.io/codeclimate/maintainability/gustavo-veiga/ihc-tesla?style=flat-square
+
+[dependencies]: https://david-dm.org/gustavo-veiga/ihc-tesla
+[code_climate]: https://codeclimate.com/github/gustavo-veiga/ihc-tesla
+
